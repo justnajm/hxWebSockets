@@ -21,7 +21,7 @@ class WebSocket { // lets use composition so we can intercept send / onmessage a
         if (_ws != null) {
             throw "Socket already connected";
         }
-        _ws = new js.html.WebSocket(url);
+        _ws = new js.html.WebSocket(this._url);
     }
 
     public var onopen(get, set):Function;
